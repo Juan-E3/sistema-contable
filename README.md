@@ -1,11 +1,2 @@
-# sistema-contable
-Juan Espinoza
-4to medio H
-Programacion
-no tengo un obejtvio profesionar
-python. javascript
-no me interesa ninguna
-
-elegi programacion debido a que senti 
-una fuerte curiosidad e interes 
-en la carrera de programacion
+#Proyecto Laboratorio
+Este proyecto lo hice con mi compañero, Martin Lobos, la idea de este proyecto es mostrar información relevante de los laboratorios del Instituto Superior de Comercio
