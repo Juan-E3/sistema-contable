@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 1 - INSUCO</title>
+    <link rel="stylesheet" href="lab1.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo-container"><img src="insuco.jpg" alt="INSUCO" class="site-logo"></div>
+            <a href="index.html" class="btn-back-header">← Volver al inicio</a>
+        </div>
+    </header>
+
+    <main class="main-layout">
+        <div class="lab-card">
+            <div class="lab-header">
+                <span class="lab-badge">Módulo 01</span>
+                <h1 class="lab-title">Laboratorio 1</h1>
+            </div>
+            
+            <div class="lab-body">
+                <!-- 1. FOTO -->
+                <div class="lab-card-item blank-canvas">
+                    <img src="sala lab1.jpg" alt="Sala de Laboratorio 1" class="lab-image">
+                </div>
+
+                <!-- 2. DETALLES TÉCNICOS -->
+                <div class="lab-card-item info-box">
+                    <h3>Detalles Técnicos</h3>
+                    <ul class="info-list">
+                        <li><strong>Identificación:</strong> LABCOMP01</li>
+                        <li><strong>Especialidad:</strong> Programación / Redes</li>
+                        <li><strong>Capacidad:</strong> 30 Equipos</li>
+                        <li><strong>Encargado:</strong> C. Páez</li>
+                        <li><strong>Estado:</strong> Operativo</li>
+                    </ul>
+                </div>
+
+                <!-- 3. INFORMACIÓN GENERAL -->
+                <div class="lab-card-item info-box">
+                    <h3>Información General</h3>
+                    <p class="info-text">
+                        Sala destinada a clases especializadas de desarrollo de software, bases de datos y configuración de redes. Cuenta con conectividad cableada y proyección audiovisual.
+                    </p>
+                </div>
+
+                <!-- 4. HORARIO -->
+                <div class="lab-card-item schedule-section">
+                    <h3 class="schedule-title">Horario LABCOMP01 (2026)</h3>
+                    <div class="schedule-container">
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>Bloque</th>
+                                    <th>Lunes</th>
+                                    <th>Martes</th>
+                                    <th>Miércoles</th>
+                                    <th>Jueves</th>
+                                    <th>Viernes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="time-col">08:00 - 09:30</td>
+                                    <td><span class="subject">PROG.BD</span><span class="teacher">C. PAEZ (3I)</span></td>
+                                    <td><span class="subject">PROG.BD</span><span class="teacher">C. PAEZ (3I)</span></td>
+                                    <td><span class="subject">SOP.U.PROD</span><span class="teacher">L. BRIONES (3H)</span></td>
+                                    <td><span class="subject">PROG.O.OBJET</span><span class="teacher">C. PAEZ (4H)</span></td>
+                                    <td><span class="subject">I.CON.REDES</span><span class="teacher">J. ACEVEDO (4I)</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">09:30 - 10:15</td>
+                                    <td><span class="subject">SOP.U.PROD</span><span class="teacher">L. BRIONES (3I)</span></td>
+                                    <td><span class="subject">SOP.U.PROD</span><span class="teacher">L. BRIONES (3I)</span></td>
+                                    <td class="empty-cell">-</td>
+                                    <td><span class="subject">D.B.DATOS.RE</span><span class="teacher">C. PAEZ (4H)</span></td>
+                                    <td><span class="subject">D.B.DATOS.RE</span><span class="teacher">J. ACEVEDO (4I)</span></td>
+                                </tr>
+                                <tr class="break-row"><td colspan="6">RECREO</td></tr>
+                                <tr>
+                                    <td class="time-col">10:35 - 12:05</td>
+                                    <td><span class="subject">CONT.DOMOTI</span><span class="teacher">C. PAEZ (3I)</span></td>
+                                    <td><span class="subject">SOP.U.PROD</span><span class="teacher">L. BRIONES (3I)</span></td>
+                                    <td><span class="subject">EMPRENDIM</span><span class="teacher">L. BRIONES (4H)</span></td>
+                                    <td><span class="subject">D.B.DATOS.RE</span><span class="teacher">J. ACEVEDO (4H)</span></td>
+                                    <td><span class="subject">PROG.O.OBJET</span><span class="teacher">C. PAEZ (4I)</span></td>
+                                </tr>
+                                <tr class="break-row"><td colspan="6">RECREO</td></tr>
+                                <tr>
+                                    <td class="time-col">12:20 - 13:50</td>
+                                    <td><span class="subject">INST.CON.EQ</span><span class="teacher">J. ACEVEDO (3I)</span></td>
+                                    <td><span class="subject">INST.CON.EQ</span><span class="teacher">J. ACEVEDO (3I)</span></td>
+                                    <td><span class="subject">D.APL.WEB</span><span class="teacher">K. ROLAND (4I)</span></td>
+                                    <td><span class="subject">AN.EXP.EMPRE</span><span class="teacher">K. ROLAND (4H)</span></td>
+                                    <td><span class="subject">D.APL.WEB</span><span class="teacher">K. ROLAND (4I)</span></td>
+                                </tr>
+                                <tr class="break-row"><td colspan="6">MEDIODÍA</td></tr>
+                                <tr>
+                                    <td class="time-col">14:35 - 15:20</td>
+                                    <td><span class="subject">PROG.BD</span><span class="teacher">C. PAEZ (3I)</span></td>
+                                    <td><span class="subject">SIS.OPE</span><span class="teacher">K. ROLAND (3I)</span></td>
+                                    <td><span class="subject">AN.EXP.EMPRE</span><span class="teacher">K. ROLAND (3I)</span></td>
+                                    <td><span class="subject">ADM.BDATOS</span><span class="teacher">C. PAEZ (4H)</span></td>
+                                    <td><span class="subject">ADM.BDATOS</span><span class="teacher">C. PAEZ (4I)</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <span><strong>Instituto Superior de Comercio (INSUCO)</strong></span>
+            <span>loboshola667@gmail.com | +56 9 6222 8731</span>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - INSUCO</title>
+    <link rel="stylesheet" href="for.css">
+</head>
+<body>
+
+    <!-- Header Principal -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="insuco.jpg" alt="Instituto Superior de Comercio Valparaíso" class="site-logo">
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="btn-back">← Volver al inicio</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenedor del Formulario -->
+    <main class="form-wrapper">
+        <div class="form-card">
+            <h3>Deja una respuesta</h3>
+            <form id="f">
+                <div class="form-group">
+                    <label for="txt">Comentario *</label>
+                    <textarea id="txt" required placeholder="Escribe tu mensaje..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="nom">Nombre *</label>
+                    <input type="text" id="nom" required placeholder="Tu nombre">
+                </div>
+
+                <div class="form-group">
+                    <label for="cor">Correo electrónico *</label>
+                    <input type="email" id="cor" required placeholder="ejemplo@correo.com">
+                </div>
+                
+                <label class="checkbox-container">
+                    <input type="checkbox" id="chk"> 
+                    <span>Guarda mi nombre y correo electrónico en este navegador.</span>
+                </label>
+
+                <button type="submit" class="btn-submit">Publicar el comentario</button>
+            </form>
+
+            <h3 class="comments-title">Comentarios</h3>
+            <div id="box"></div>
+        </div>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <strong>Instituto Superior de Comercio (INSUCO)</strong>
+                <p>© Todos los derechos reservados.</p>
+            </div>
+            <div class="footer-contact">
+                <span>Contacto: loboshola667@gmail.com</span>
+                <span>Teléfono: +56 9 6222 8731</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+      const form = document.getElementById('f');
+      const nom = document.getElementById('nom'), cor = document.getElementById('cor'), txt = document.getElementById('txt'), chk = document.getElementById('chk');
+
+      window.onload = () => {
+        if (localStorage.getItem('g') === 'true') {
+          nom.value = localStorage.getItem('n');
+          cor.value = localStorage.getItem('c');
+          chk.checked = true;
+        }
+      };
+
+      form.onsubmit = (e) => {
+        e.preventDefault();
+
+        if (chk.checked) {
+          localStorage.setItem('g', 'true');
+          localStorage.setItem('n', nom.value);
+          localStorage.setItem('c', cor.value);
+        } else {
+          localStorage.clear();
+        }
+        let n = document.createElement('div');
+        n.className = 'item';
+        n.innerHTML = `<strong>${nom.value}</strong><p style="margin:4px 0 0; color:#555;">${txt.value}</p>`;
+        document.getElementById('box').prepend(n);
+
+        txt.value = '';
+        if (!chk.checked) { nom.value = ''; cor.value = ''; }
+      };
+    </script>
+
+</body>
+</html>
